@@ -12,7 +12,7 @@ env:
 jobs:
   update-pages:
     runs-on: ubuntu-18.04
-    if: ${{ github.event_name == "push" || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'push' || github.event.workflow_run.conclusion == 'success' }}
     steps:
     - uses: actions/checkout@v2
       with:
